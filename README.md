@@ -10,7 +10,20 @@ This data represents records of police reported stops under Terry v. Ohio, 392 U
 * Each record contains perceived demographics of the subject, as reported by the officer making the stop and officer demographics as reported to the Seattle Police Department, for employment purposes.
 * Where available, data elements from the associated Computer Aided Dispatch (CAD) event (e.g. Call Type, Initial Call Type, Final Call Type) are included.
 
+# EDA
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_race.png)
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_gender.png)
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/weapon_type.png)
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/calls_by_month.png)
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/calls_by_hour.png)
+
 # Statistical Tests
+
 We conducted Chi Square Tests on Subject Race/ Officer Race/ Time of Day/ Subject Gender, and Arrests, and found a significant association between these characteristics and Arrests. However, we do not know which exactly have an association and to what degree.
 
 # Class Imbalance
@@ -31,10 +44,11 @@ Our Logistic model, based on F1 score, is supposedly 39.4% accurate when predict
 
 # Future Work
 - We could look into data for police reported stops in other regions.
-- We could focus more on specifics of the Seattle Police Department.
-- We could gather data on arrests in general, not just as Terry Stops.
-=======
-![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_race.png)
 
-![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_race.png)
+- We could focus more on specifics of the Seattle Police Department.
+
+- We could gather data on arrests in general, not just as Terry Stops.
+
+  
+
 >>>>>>> Stashed changes
