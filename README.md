@@ -17,16 +17,16 @@ We conducted Chi Square Tests on Subject Race/ Officer Race/ Time of Day/ Subjec
 Our dataset had a large imbalance, with 94.56% of the cleaned data leading to no arrests. To deal with this, we utilized SMOTENC as almost all of our features were categorical. Because of such an imbalance, we needed to take into consideration F1 score and not Accuracy during modeling.
 
 # Modeling
-We created 4 different classification models: Logistic Regression, KNN, Decision Tree, and Random Forest. Random Forest gave us the best model with 0.9016 F1 score. Afterwards we used Grid Cross-Validation on LR and Random Forest and obtained the same and worse F1 scores respectively.
+We created 4 different classification models: Logistic Regression, KNN, Decision Tree, and Random Forest. Logistic Regression gave us the best model with 0.394 F1 score. Afterwards we used Grid Cross-Validation on LR and Random Forest and obtained a worse and slightly better (0.356 -> 0.378) F1 scores respectively.
 
-We also implemented XGBoost which did slightly worse than Random Forest with a 0.9004 F1 score.
+We also implemented XGBoost which only had a 0.357 F1 score. Using Grid Cross-Validation increased the score to 0.383
 
-Our Voting Classifier, which combined all of the previous models, gave us a F1 score of only 0.8591.
+Our Voting Classifier, which combined all of the previous models, gave us a F1 score of only 0.384
 
-As a result, we would use the Random Forest model when predicting unseen datasets.
+As a result, we would use the Logistic Regression model when predicting unseen datasets.
 
 # Conclusion
-Our Random Forest model, based on F1 score, is supposedly 90.16% accurate when predicting arrests based on various parameters of the Terry Stop encounter. We have somewhat conflicting information between feature selection and hypothesis testing, though it may be due to said features not having enough of an impact to have a meaningful coefficient score.
+Our Logistic model, based on F1 score, is supposedly 39.4% accurate when predicting arrests based on various parameters of the Terry Stop encounter. Perhaps the reason the F1 score is so low is because arrests simply cannot be predicted very well from just Terry Stop parameters alone.
 
 # Future Work
 - We could look into data for police reported stops in other regions.
