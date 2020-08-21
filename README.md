@@ -25,6 +25,7 @@ Our Voting Classifier, which combined all of the previous models, gave us a F1 s
 
 As a result, we would use the Logistic Regression model when predicting unseen datasets.
 
+<<<<<<< Updated upstream
 # Conclusion
 Our Logistic model, based on F1 score, is supposedly 39.4% accurate when predicting arrests based on various parameters of the Terry Stop encounter. Perhaps the reason the F1 score is so low is because arrests simply cannot be predicted very well from just Terry Stop parameters alone.
 
@@ -32,3 +33,8 @@ Our Logistic model, based on F1 score, is supposedly 39.4% accurate when predict
 - We could look into data for police reported stops in other regions.
 - We could focus more on specifics of the Seattle Police Department.
 - We could gather data on arrests in general, not just as Terry Stops.
+=======
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_race.png)
+
+![Image](https://github.com/kenyo/mod-3-final-project/blob/master/images/arrests_by_race.png)
+>>>>>>> Stashed changes
